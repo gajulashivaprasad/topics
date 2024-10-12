@@ -1,0 +1,22 @@
+name: Topics - DEVELOPMENT WORKFLOW
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy the Sample Codebase
+        run: |
+          # Print a message to confirm deployment
+          echo "Joovnet API has been successfully deployed to the development environment."
+
+      - name: Clean up
+        run: |
+          echo "Application stopped"
