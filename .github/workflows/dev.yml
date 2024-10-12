@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: joovnet
+    runs-on: ["self-hosted", "joovnet"]
 
     steps:
       - name: Checkout code
